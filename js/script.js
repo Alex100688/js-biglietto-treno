@@ -2,6 +2,8 @@ const numberkm=Number(prompt("Quanti kilometri volete effettuare?"));
 console.log (typeof numberkm);
 const agePassenger=Number(prompt("Età del passeggero"));
 console.log (typeof agePassenger);
+const ticket=Number (0.21 * numberkm);
+console.log (ticket);
 
 /*Il programma dovrà chiedere all'utente ilnumero di chilometri che vuole percorrere e l'età del passeggero.
 Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
