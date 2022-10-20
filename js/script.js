@@ -10,9 +10,10 @@ const discountSenior=Math.floor (ticket * 40 / 100);
 console.log (discountSenior);
 const ageYoung=Number(18);
 const ageSenior=Number(65);
-if(agePassenger < ageYoung){console.log ("Sconto per te del 20%")}
-else if(agePassenger >= ageSenior){console.log ("Sconto per te del 40%")}
+if(agePassenger < ageYoung){document.getElementById("young-price").innerHTML="Sconto per te del 20%"}
+else if(agePassenger >= ageSenior){document.querySelector("h3").innerHTML="Sconto per te del 40%"}
 else {ageYoung >= 18 && ageSenior < 65 (alert("Ci dispiace ma non hai diritto allo sconto"))}
+
 
 /*Il programma dovrà chiedere all'utente ilnumero di chilometri che vuole percorrere e l'età del passeggero.
 Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
